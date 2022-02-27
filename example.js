@@ -1,5 +1,6 @@
 'use strict';
 (() => {
+    console.log("Example")
     const exampleJavaScriptObject = {
         course: 'Application Development',
         school: 'Full Sail University',
