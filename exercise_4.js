@@ -79,5 +79,18 @@
     *       3. Create and output to console an array of all activities sorted by key
     * 
     */
+
+    const third = api.activities[2];
+    console.log("1: ", third)
+
+    const threeOrMore = [];
+    for(let i = 0; i < api.activities.length; i++){
+        const people = api.activities[i];
+        if(people.participants >= 3) threeOrMore.push(people)
+    }
+    console.log("2: ", threeOrMore)
+
+    const sortedKeys = api.activities.sort((a,b) => parseFloat(a.key) - parseFloat(b.key))
+    console.log("3: ", sortedKeys)
        
 })()
