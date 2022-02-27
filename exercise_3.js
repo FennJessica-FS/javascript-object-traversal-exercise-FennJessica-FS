@@ -2416,8 +2416,19 @@
     *       1. Create and output to console this statement with appropriate information for each [variable] below: 
     *               "To date, the [Agency] [mission] mission has discovered [totalBodies] in its search for [title]." 
     *       2. Create and output to console an array of items with a orbit_class of Apollo
-    *       3. Create and output to console an array sorted by discovery_date
+    *       3. Create and output to console an array sorted by period_yr
     * 
     */
+    const statement = `To date, the ${api.agency} ${api.mission} mission has discovered ${api.bodies.length} bodies in its search for ${api.title}.`
+    console.log("1: ", statement)
 
+    const apollo = [];
+    for(let i = 0; i < api.bodies.length; i++){
+        const body = api.bodies[i];
+        if(body.orbit_class === "Apollo") apollo.push(body)
+    }
+    console.log("2: ", apollo)
+
+    const sortedBodies = api.bodies.sort((a,b) => parseFloat(a.period_yr) - parseFloat(b.period_yr))
+    console.log("3: ", sortedBodies)
 })()
