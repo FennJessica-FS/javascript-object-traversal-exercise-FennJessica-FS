@@ -476,15 +476,14 @@
     }
    
     console.log("Exercise 2");
-
+    console.log(api)
+    
     /*
     *       Instructions:
     * 
     *       1. Create and output to console an array of only movies
     *       2. Create and output to console a variable containing only the "Breaking Bad" object
-    *       3. Create and output to console an array containing all media with PG-13 and R ratings
-    *       4. Create and output to console an array containing each items' title and runtime
-    *       5. Create and output to console an array of only media that is Coming Soon 
+    *       3. Create and output to console an array of only media that is Coming Soon 
     * 
     */
 

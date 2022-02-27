@@ -109,16 +109,15 @@
     }
 
     console.log("Exercise 1");
-
+    console.log(api)
+    
     /*
     *       Instructions:
     * 
     *       1. Create and output to console an array of all defenders.
-    *       2. Create and output to console an array of all midfielders.
-    *       3. Create and output to console an array of all players sorted by id
-    *       4. Create and output to console this statement with appropriate information for each [variable] below: 
+    *       2. Create and output to console an array of all players sorted by id
+    *       3. Create and output to console this statement with appropriate information for each [variable] below: 
     *               "[TeamName] of [Location] remains in [rank] place in the [league]." 
-    *       5. Create and output to console the total number of players listed in the squad
     * 
     */
 
