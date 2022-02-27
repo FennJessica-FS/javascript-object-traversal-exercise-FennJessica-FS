@@ -487,21 +487,4 @@
     * 
     */
 
-    const movies = [];
-    for(let i = 0; i < api.media.length; i++){
-        const item = api.media[i];
-        if(item.Type === "movie") movies.push(item)
-    }
-    console.log("1: ", movies)
-
-    const breakingBad = api.media[11]
-    console.log("2: ", breakingBad)
-
-    const comingSoon = [];
-    for(let i = 0; i < api.media.length; i++){
-        const item = api.media[i];
-        if(item.ComingSoon == true) comingSoon.push(item)
-    }
-    console.log("3: ", comingSoon)
-
 })()

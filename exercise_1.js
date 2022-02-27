@@ -119,18 +119,8 @@
     *       3. Create and output to console this statement with appropriate information for each [variable] below: 
     *               "[TeamName] of [Location] remains in [rank] place in the [league]." 
     * 
+    *       Hint: Sorting an array can be done with Array.sort((a,b) => a.value -  b.value)
+    * 
     */
 
-    const defenders = [];
-    for(let i = 0; i < api.squad.length; i++){
-        const player = api.squad[i];
-        if(player.position === "Defender") defenders.push(player)
-    }
-    console.log("1: ", defenders)
-
-    const sortedPlayers = api.squad.sort((a,b) => a.id - b.id)
-    console.log("2: ", sortedPlayers)
-
-    const statement = `${api.name} of ${api.location} remains in ${api.note.rank} place in the ${api.note.description}.`
-    console.log("3: ", statement)
 })()

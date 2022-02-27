@@ -78,19 +78,8 @@
     *       2. Create and output to console an array containing activities for 3 or more people
     *       3. Create and output to console an array of all activities sorted by key
     * 
+    *       Hint: Changing a string to a number can be done with parseInt or parseFloat
+    *       Hint: Sorting an array can be done with Array.sort((a,b) => a.value -  b.value)
     */
-
-    const third = api.activities[2];
-    console.log("1: ", third)
-
-    const threeOrMore = [];
-    for(let i = 0; i < api.activities.length; i++){
-        const people = api.activities[i];
-        if(people.participants >= 3) threeOrMore.push(people)
-    }
-    console.log("2: ", threeOrMore)
-
-    const sortedKeys = api.activities.sort((a,b) => parseFloat(a.key) - parseFloat(b.key))
-    console.log("3: ", sortedKeys)
        
 })()
