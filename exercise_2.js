@@ -477,7 +477,7 @@
    
     console.log("Exercise 2");
     console.log(api)
-    
+
     /*
     *       Instructions:
     * 
@@ -486,5 +486,22 @@
     *       3. Create and output to console an array of only media that is Coming Soon 
     * 
     */
+
+    const movies = [];
+    for(let i = 0; i < api.media.length; i++){
+        const item = api.media[i];
+        if(item.Type === "movie") movies.push(item)
+    }
+    console.log("1: ", movies)
+
+    const breakingBad = api.media[11]
+    console.log("2: ", breakingBad)
+
+    const comingSoon = [];
+    for(let i = 0; i < api.media.length; i++){
+        const item = api.media[i];
+        if(item.ComingSoon == true) comingSoon.push(item)
+    }
+    console.log("3: ", comingSoon)
 
 })()
