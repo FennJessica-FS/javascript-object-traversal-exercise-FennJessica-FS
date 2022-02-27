@@ -951,5 +951,13 @@
     *               "[Name] is a [type] with a weight of [weight] and has [number of moves] moves.
     * 
     */
+
+    const abilities = api.abilities;
+    console.log("1: ", abilities)
+
+    const itemHeld = api.held_items[0];
+    console.log("2: ", itemHeld)
        
+    const statement = `${api.name} is a ${api.types[0].type.name} with a weight of ${api.weight} and has ${api.stats[0].base_stat} hp.`;
+    console.log("3: ", statement)
 })()
