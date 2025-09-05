@@ -942,6 +942,15 @@
 
     console.log("Exercise 5");
     console.log(api)
+
+
+    //1. Create and output to console an array of all abilities 
+
+     const allAbilities = 
+
+
+
+
     /*
     *       Instructions:
     * 

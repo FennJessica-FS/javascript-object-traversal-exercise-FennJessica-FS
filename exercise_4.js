@@ -71,6 +71,30 @@
 
     console.log("Exercise 4");
     console.log(api)
+
+    //1. Variable containing the third activity in the list and console output
+
+     const thirdActivity = api.activities[2];
+        console.log("1: Third activity:", thirdActivity);
+     
+    //2. Array containing activities for 3 or more people and console output// 
+    //use strict & checking the console log as I go has saved my behind with coding errors so far allowing me to fix my mistakes//
+
+      const activitiesForThreeOrMore = api.activities.filter(activity => activity.participants >= 3);
+
+        console.log("2: Activities for 3 or more people:", activitiesForThreeOrMore);
+
+  
+    //3. Array of all activities sorted by key and console output// 
+    //I went back and forth on this one, again thank you for the hints, helpful //
+
+        const activitiesSortedByKey = [...api.activities].sort((a, b) => parseInt(a.key) - parseInt(b.key));
+
+        console.log("3: Activities sorted by key:", activitiesSortedByKey);
+      
+    
+
+
     /*
     *       Instructions:
     * 
