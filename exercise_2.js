@@ -512,16 +512,16 @@
 
   const moviesArray = api.media.filter((item) => item.Type === "movie");
 
-  console.log("Only movies:", moviesArray);
+  console.log("1: Only movies:", moviesArray);
 
   //2. Create and output to console a variable containing only the "Breaking Bad" object//*
 
   const breakingBad = api.media.find((item) => item.Title === "Breaking Bad");
-  console.log("Breaking Bad object:", breakingBad);
+  console.log("2: Breaking Bad object:", breakingBad);
 
   //3. Output to console an array of only media that is Coming Soon//
   const comingSoonArray = api.media.filter((item) => item.ComingSoon);
-  console.log("Coming Soon:", comingSoonArray);
+  console.log("3: Coming Soon:", comingSoonArray);
 
   /*
    *       Instructions:
