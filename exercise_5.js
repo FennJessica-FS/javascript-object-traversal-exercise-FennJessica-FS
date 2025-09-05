@@ -944,12 +944,34 @@
     console.log(api)
 
 
-    //1. Create and output to console an array of all abilities 
+    //1. Created and output to console an array of all abilities
+        const abilities = [];
 
-     const allAbilities = 
+        for(let i = 0; i < api.abilities.length; i++){
+            abilities.push(api.abilities[i].ability.name);
+        }
+        console.log ("All abilitiies: " + abilities);
+    
 
 
+    //2. Creates and output to console the first item held
 
+    const firstItemHeld = api.held_items[0].item.name;
+
+    console.log("First item held: " + firstItemHeld);
+
+
+    //3. Creates and outputs to console this statement with appropriate information for each [variable] below: "[Name] is a [type] with a weight of [weight] and has [hp] hp.
+    
+    
+
+     const name = api.name;
+     const type = api.types[0].type.name;
+    const weight = api.weight;
+    const hp = api.stats[0].base_stat;
+
+     console.log(`${name} is a ${type} type with a weight of ${weight} and has ${hp} hp.`);
+      
 
     /*
     *       Instructions:
